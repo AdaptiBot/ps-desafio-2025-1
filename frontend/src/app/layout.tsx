@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Arimo } from 'next/font/google'
 import '@/app/globals.css'
 import { Providers } from '@/providers/providers'
 import { Toaster as SonnerToaster } from '@/components/sonner'
 import { Toaster } from '@/components/toaster'
-
-const arimo = Arimo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sama Motors',
@@ -19,7 +16,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={arimo.className}>
+      <body className="font-sans">
         <Providers>
           {children}
           <SonnerToaster />

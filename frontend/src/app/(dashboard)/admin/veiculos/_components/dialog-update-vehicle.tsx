@@ -21,7 +21,10 @@ interface DialogUpdateVehicleProps {
   children: React.ReactNode
 }
 
-export function DialogUpdateVehicle({ id, children }: DialogUpdateVehicleProps) {
+export function DialogUpdateVehicle({
+  id,
+  children,
+}: DialogUpdateVehicleProps) {
   const [vehicle, setVehicle] = useState<vehicleType | null>(null)
   const [open, setOpen] = useState<boolean>()
   const [error, setError] = useState<ResponseErrorType | null>(null)

@@ -19,7 +19,10 @@ interface DialogCreateVehicleProps {
   children: React.ReactNode
 }
 
-export function DialogVehicleDelete({ id, children }: DialogCreateVehicleProps) {
+export function DialogVehicleDelete({
+  id,
+  children,
+}: DialogCreateVehicleProps) {
   const [open, setOpen] = useState<boolean>()
   const { toast } = useToast()
 
